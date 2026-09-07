@@ -1,11 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio Cá Nhân | Nguyễn Văn A</title>
 </head>
 <body>
-    
+
+    <!-- HEADER: Chứa phần nhận diện chính của website (tên, logo) và khu vực điều hướng, giúp người xem xác định chủ nhân của trang và cách di chuyển qua các mục. -->
+    <header id="home">
+        <h1>Nguyễn Văn A</h1>
+        <p>Front-end Web Developer</p>
+        
+        <!-- NAV: Cung cấp thanh điều hướng chính, chứa các liên kết nội bộ trỏ đến những vùng nội dung quan trọng của website để người dùng di chuyển nhanh chóng. -->
+        <nav>
+            <ul>
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#skills">Kỹ năng</a></li>
+                <li><a href="#projects">Dự án</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN: Chứa toàn bộ nội dung cốt lõi và độc nhất của trang. Trình duyệt và các công cụ tìm kiếm sẽ tập trung vào vùng này để hiểu nội dung chính của Portfolio. -->
+    <main>
+
+        <!-- SECTION: Nhóm các nội dung liên quan đến một chủ đề cụ thể. Khối này dùng để tóm tắt về bản thân, giúp nhà tuyển dụng có cái nhìn tổng quan. -->
+        <section id="about">
+            <h2>Giới thiệu bản thân</h2>
+            <p>Xin chào, tôi là Nguyễn Văn A - một Front-end Developer với niềm đam mê xây dựng những giao diện web hiện đại, dễ sử dụng và chuẩn Semantic.</p>
+            <p>Tôi hiện đang tập trung vào việc tối ưu hóa trải nghiệm người dùng (UX) và hiệu năng của các ứng dụng web. Mục tiêu nghề nghiệp của tôi là trở thành một Senior Front-end Developer và tiến tới Full-stack trong vòng 3 năm tới, góp phần xây dựng những sản phẩm công nghệ mang lại giá trị thực tiễn.</p>
+        </section>
+
+        <!-- SECTION: Khối nội dung trình bày danh sách các năng lực, kỹ năng công nghệ, giúp làm nổi bật trình độ chuyên môn của người viết. -->
+        <section id="skills">
+            <h2>Kỹ năng công nghệ</h2>
+            <ul>
+                <li>HTML5 (Semantic Web, Accessibility)</li>
+                <li>CSS3 (Flexbox, Grid, Responsive Web Design)</li>
+                <li>JavaScript (ES6+, DOM Manipulation)</li>
+                <li>Quản lý mã nguồn với Git & GitHub</li>
+                <li>Kiến thức cơ bản về UI/UX và Figma</li>
+            </ul>
+        </section>
+
+        <!-- SECTION: Nhóm các dự án thực tế để minh chứng cho kỹ năng. Khối này chứa nhiều thành phần con độc lập bên trong. -->
+        <section id="projects">
+            <h2>Dự án tiêu biểu</h2>
+
+            <!-- ARTICLE: Đại diện cho một nội dung độc lập, hoàn chỉnh và có ý nghĩa riêng. Mỗi dự án là một sản phẩm độc lập có thể được tách ra và đọc hiểu riêng biệt. -->
+            <article>
+                <h3>Ứng dụng Quản lý công việc (To-do App)</h3>
+                <p>Một ứng dụng web đơn giản giúp người dùng ghi chú và quản lý các công việc hằng ngày, hỗ trợ đánh dấu hoàn thành và lưu trữ dữ liệu tại trình duyệt.</p>
+                <p><strong>Công nghệ:</strong> HTML5, CSS3, Vanilla JavaScript, LocalStorage.</p>
+                <p><a href="https://github.com/example/todo-app" target="_blank" rel="noopener noreferrer">Xem mã nguồn dự án trên GitHub</a></p>
+            </article>
+
+            <!-- ARTICLE: Một bài viết/dự án độc lập tiếp theo. -->
+            <article>
+                <h3>Trang web Landing Page Sản phẩm</h3>
+                <p>Giao diện trang đích giới thiệu một sản phẩm công nghệ mới, thiết kế tương thích với mọi kích thước màn hình từ điện thoại đến máy tính bàn.</p>
+                <p><strong>Công nghệ:</strong> HTML5, CSS3, Flexbox/Grid.</p>
+                <p><a href="https://github.com/example/landing-page" target="_blank" rel="noopener noreferrer">Xem mã nguồn dự án trên GitHub</a></p>
+            </article>
+
+            <!-- ARTICLE: Dự án độc lập thứ ba. -->
+            <article>
+                <h3>Ứng dụng Thời tiết (Weather App)</h3>
+                <p>Ứng dụng dự báo thời tiết trực tuyến sử dụng OpenWeatherMap API để lấy và hiển thị thông tin thời tiết theo thời gian thực tại các thành phố khác nhau.</p>
+                <p><strong>Công nghệ:</strong> HTML5, CSS3, JavaScript, Fetch API, JSON.</p>
+                <p><a href="https://github.com/example/weather-app" target="_blank" rel="noopener noreferrer">Xem mã nguồn dự án trên GitHub</a></p>
+            </article>
+
+        </section>
+
+        <!-- SECTION: Cung cấp khu vực chứa thông tin liên lạc và form nhập liệu để người xem tương tác, gửi phản hồi trực tiếp cho chủ website. -->
+        <section id="contact">
+            <h2>Liên hệ với tôi</h2>
+            
+            <!-- ADDRESS: Thẻ đặc biệt dùng để cung cấp thông tin liên hệ của tác giả (như email, số điện thoại, địa chỉ mạng xã hội). -->
+            <address>
+                <p>Email: <a href="mailto:nguyenvana@example.com">nguyenvana@example.com</a></p>
+                <p>Điện thoại: <a href="tel:+84123456789">0123 456 789</a></p>
+            </address>
+
+            <h3>Gửi tin nhắn trực tiếp</h3>
+            <form action="#" method="POST">
+                <p>
+                    <label for="fullname">Họ và tên:</label><br>
+                    <input type="text" id="fullname" name="fullname" required>
+                </p>
+                
+                <p>
+                    <label for="email">Email của bạn:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+                
+                <p>
+                    <label for="message">Nội dung tin nhắn:</label><br>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </p>
+                
+                <p>
+                    <button type="submit">Gửi tin nhắn</button>
+                </p>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- FOOTER: Phần chân trang của trang web, thường chứa thông tin bản quyền, các liên kết pháp lý, hoặc lời cảm ơn ngắn gọn đến người xem. -->
+    <footer>
+        <p>&copy; 2026 Nguyễn Văn A. Bản quyền đã được bảo hộ.</p>
+        <p>Xây dựng hoàn toàn bằng HTML5 Semantic.</p>
+    </footer>
+
 </body>
 </html>
