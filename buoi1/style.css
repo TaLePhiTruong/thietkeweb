@@ -2,31 +2,12 @@
    1. CÀI ĐẶT CHUNG
    ================================ */
 
-/* 
    * {
-       áp dụng cho tất cả phần tử HTML.
-   }
-
-   box-sizing: border-box giúp width/height
-   bao gồm cả padding và border.
-*/
-* {
     box-sizing: border-box;
 }
 
+/* Đã xóa scroll-behavior: smooth */
 
-/*
-   Thiết lập cách cuộn trang mượt mà
-   khi click vào các link #about, #skills...
-*/
-html {
-    scroll-behavior: smooth;
-}
-
-
-/*
-   Thiết lập giao diện chung cho toàn bộ body.
-*/
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -47,19 +28,11 @@ header {
     padding: 60px 20px 30px;
 }
 
-
-/*
-   Tên của chủ portfolio
-*/
 header h1 {
     margin: 0 0 10px;
     font-size: 42px;
 }
 
-
-/*
-   Chức danh
-*/
 header > p {
     margin: 0 0 30px;
     font-size: 20px;
@@ -75,35 +48,21 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 10px;
-
     margin: 0;
     padding: 0;
-
     list-style: none;
     flex-wrap: wrap;
 }
-
 
 nav a {
     display: block;
     color: white;
     text-decoration: none;
-
     padding: 10px 16px;
     border-radius: 8px;
-
-    transition: background-color 0.3s ease,
-                transform 0.3s ease;
 }
 
-
-/*
-   Hiệu ứng khi đưa chuột vào link.
-*/
-nav a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    transform: translateY(-2px);
-}
+/* Đã xóa nav a:hover */
 
 
 /* ================================
@@ -122,34 +81,21 @@ main {
 
 section {
     background-color: white;
-
     margin-bottom: 30px;
     padding: 40px;
-
     border-radius: 12px;
-
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
 }
 
-
-/*
-   Tiêu đề của từng section
-*/
 section h2 {
     margin-top: 0;
     margin-bottom: 20px;
-
     color: #1d4ed8;
     font-size: 28px;
-
     border-bottom: 3px solid #2563eb;
     padding-bottom: 10px;
 }
 
-
-/*
-   Khoảng cách giữa các đoạn văn.
-*/
 section p {
     margin-bottom: 15px;
 }
@@ -163,15 +109,10 @@ section p {
     padding-left: 20px;
 }
 
-
 #skills li {
     margin-bottom: 10px;
 }
 
-
-/*
-   Khi rê chuột vào từng kỹ năng.
-*/
 #skills li::marker {
     color: #2563eb;
 }
@@ -181,65 +122,33 @@ section p {
    7. PROJECTS
    ================================ */
 
-
-/*
-   Mỗi article là một project.
-*/
 #projects article {
     border: 1px solid #e5e7eb;
-
     padding: 25px;
     margin-bottom: 20px;
-
     border-radius: 10px;
-
     background-color: #f8fafc;
-
-    transition: transform 0.3s ease,
-                box-shadow 0.3s ease;
 }
 
-
-/*
-   Bỏ khoảng cách dưới cho article cuối cùng.
-*/
 #projects article:last-child {
     margin-bottom: 0;
 }
 
-
-/*
-   Hiệu ứng hover project.
-*/
-#projects article:hover {
-    transform: translateY(-5px);
-
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-}
-
+/* Đã xóa #projects article:hover */
 
 #projects h3 {
     margin-top: 0;
     color: #111827;
 }
 
-
-/*
-   Link GitHub.
-*/
 #projects a {
     display: inline-block;
-
     color: #2563eb;
     font-weight: bold;
-
     text-decoration: none;
 }
 
-
-#projects a:hover {
-    text-decoration: underline;
-}
+/* Đã xóa #projects a:hover */
 
 
 /* ================================
@@ -248,32 +157,23 @@ section p {
 
 address {
     font-style: normal;
-
     background-color: #eff6ff;
-
     padding: 20px;
     border-left: 4px solid #2563eb;
-
     border-radius: 6px;
-
     margin-bottom: 30px;
 }
-
 
 address p {
     margin: 5px 0;
 }
-
 
 address a {
     color: #2563eb;
     text-decoration: none;
 }
 
-
-address a:hover {
-    text-decoration: underline;
-}
+/* Đã xóa address a:hover */
 
 
 /* ================================
@@ -284,47 +184,25 @@ form p {
     margin-bottom: 20px;
 }
 
-
 label {
     display: inline-block;
-
     margin-bottom: 6px;
-
     font-weight: bold;
 }
-
 
 input,
 textarea {
     width: 100%;
-
     padding: 12px 14px;
-
     border: 1px solid #d1d5db;
     border-radius: 8px;
-
     font-family: inherit;
     font-size: 16px;
-
     background-color: white;
-
     outline: none;
-
-    transition: border-color 0.3s ease,
-                box-shadow 0.3s ease;
 }
 
-
-/*
-   Khi người dùng click vào input/textarea.
-*/
-input:focus,
-textarea:focus {
-    border-color: #2563eb;
-
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
-}
-
+/* Đã xóa input:focus và textarea:focus */
 
 textarea {
     resize: vertical;
@@ -337,33 +215,16 @@ textarea {
 
 button {
     border: none;
-
     padding: 12px 24px;
-
     border-radius: 8px;
-
     background-color: #2563eb;
     color: white;
-
     font-size: 16px;
     font-weight: bold;
-
     cursor: pointer;
-
-    transition: background-color 0.3s ease,
-                transform 0.3s ease;
 }
 
-
-button:hover {
-    background-color: #1d4ed8;
-    transform: translateY(-2px);
-}
-
-
-button:active {
-    transform: translateY(0);
-}
+/* Đã xóa button:hover và button:active */
 
 
 /* ================================
@@ -373,14 +234,10 @@ button:active {
 footer {
     background-color: #111827;
     color: #d1d5db;
-
     text-align: center;
-
     padding: 30px 20px;
-
     margin-top: 40px;
 }
-
 
 footer p {
     margin: 5px 0;
@@ -391,49 +248,36 @@ footer p {
    12. RESPONSIVE
    ================================ */
 
-
-/*
-   CSS này sẽ được áp dụng khi màn hình
-   có chiều rộng tối đa 768px.
-*/
 @media (max-width: 768px) {
-
     header {
         padding: 40px 15px 25px;
     }
-
 
     header h1 {
         font-size: 32px;
     }
 
-
     header > p {
         font-size: 17px;
     }
-
 
     nav ul {
         flex-direction: column;
         align-items: center;
     }
 
-
     nav a {
         width: 200px;
     }
-
 
     main {
         width: 94%;
         margin: 25px auto;
     }
 
-
     section {
         padding: 25px 20px;
     }
-
 
     section h2 {
         font-size: 24px;
