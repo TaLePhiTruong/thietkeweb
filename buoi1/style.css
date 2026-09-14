@@ -1,0 +1,285 @@
+/* ================================
+   1. CÀI ĐẶT CHUNG
+   ================================ */
+
+   * {
+    box-sizing: border-box;
+}
+
+/* Đã xóa scroll-behavior: smooth */
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f7fa;
+}
+
+
+/* ================================
+   2. HEADER
+   ================================ */
+
+header {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: white;
+    text-align: center;
+    padding: 60px 20px 30px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+    font-size: 42px;
+}
+
+header > p {
+    margin: 0 0 30px;
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+
+/* ================================
+   3. THANH ĐIỀU HƯỚNG
+   ================================ */
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+}
+
+/* Đã xóa nav a:hover */
+
+
+/* ================================
+   4. MAIN
+   ================================ */
+
+main {
+    width: min(1100px, 90%);
+    margin: 40px auto;
+}
+
+
+/* ================================
+   5. SECTION
+   ================================ */
+
+section {
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+section h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #1d4ed8;
+    font-size: 28px;
+    border-bottom: 3px solid #2563eb;
+    padding-bottom: 10px;
+}
+
+section p {
+    margin-bottom: 15px;
+}
+
+
+/* ================================
+   6. SKILLS
+   ================================ */
+
+#skills ul {
+    padding-left: 20px;
+}
+
+#skills li {
+    margin-bottom: 10px;
+}
+
+#skills li::marker {
+    color: #2563eb;
+}
+
+
+/* ================================
+   7. PROJECTS
+   ================================ */
+
+#projects article {
+    border: 1px solid #e5e7eb;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #f8fafc;
+}
+
+#projects article:last-child {
+    margin-bottom: 0;
+}
+
+/* Đã xóa #projects article:hover */
+
+#projects h3 {
+    margin-top: 0;
+    color: #111827;
+}
+
+#projects a {
+    display: inline-block;
+    color: #2563eb;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Đã xóa #projects a:hover */
+
+
+/* ================================
+   8. CONTACT
+   ================================ */
+
+address {
+    font-style: normal;
+    background-color: #eff6ff;
+    padding: 20px;
+    border-left: 4px solid #2563eb;
+    border-radius: 6px;
+    margin-bottom: 30px;
+}
+
+address p {
+    margin: 5px 0;
+}
+
+address a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+/* Đã xóa address a:hover */
+
+
+/* ================================
+   9. FORM
+   ================================ */
+
+form p {
+    margin-bottom: 20px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 16px;
+    background-color: white;
+    outline: none;
+}
+
+/* Đã xóa input:focus và textarea:focus */
+
+textarea {
+    resize: vertical;
+}
+
+
+/* ================================
+   10. BUTTON
+   ================================ */
+
+button {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Đã xóa button:hover và button:active */
+
+
+/* ================================
+   11. FOOTER
+   ================================ */
+
+footer {
+    background-color: #111827;
+    color: #d1d5db;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+
+/* ================================
+   12. RESPONSIVE
+   ================================ */
+
+@media (max-width: 768px) {
+    header {
+        padding: 40px 15px 25px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header > p {
+        font-size: 17px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        width: 200px;
+    }
+
+    main {
+        width: 94%;
+        margin: 25px auto;
+    }
+
+    section {
+        padding: 25px 20px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+}
